@@ -1,6 +1,10 @@
 {
   "rss_info": [
     {
+      "title": "Draveness",
+      "url": "https://draveness.me/feed.xml"
+    },
+    {
       "title": "少数派",
       "url": "https://sspai.com/feed"
     },
@@ -11,6 +15,10 @@
     {
       "title": "酷壳 coolshell",
       "url": "https://coolshell.cn/feed"
+    },
+    {
+      "title": "No Headback",
+      "url": "https://xargin.com/rss/"
     }
   ]
 }
