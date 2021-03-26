@@ -61,6 +61,7 @@ func GetPosts() {
 	var msg = make([]string, 0)
 	for _, info := range RssInfos.RssInfo {
 		msg = append(msg, GetPostInfo(info)...)
+
 	}
 	PushPost(msg)
 }
@@ -78,6 +79,7 @@ func GetPostInfo(rss RssInfo) []string {
 		fmt.Print(err.Error())
 	} else {
 		for _, item := range feed.Items {
+			fmt.Println(rss.Url, item.Title, item.PublishedParsed)
 			if item.PublishedParsed != nil && item.PublishedParsed.Unix() >= start && item.PublishedParsed.Unix() < end {
 				msgItem := fmt.Sprintln(item.Title, item.Link)
 				msg = append(msg, msgItem)
