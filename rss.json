@@ -19,6 +19,10 @@
     {
       "title": "No Headback",
       "url": "https://xargin.com/rss/"
+    },
+    {
+      "title": "Kubernetes Blog",
+      "url": "https://kubernetes.io/feed.xml"
     }
   ]
 }
